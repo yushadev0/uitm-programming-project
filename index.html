@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Workshop Sign-up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Tech Workshop Registration</h1>
+            <p>Join our upcoming technology workshop. Fill out the form below to secure your spot.</p>
+        </header>
+
+        <section class="form-section">
+            <form id="signup-form">
+                <div class="form-group">
+                    <label class="input-label" for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" class="form-input" placeholder="e.g. Anna Kowalska">
+                </div>
+
+                <div class="form-group">
+                    <label class="input-label" for="email">Email Address</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="e.g. anna@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label class="input-label" for="age">Age</label>
+                    <input type="number" id="age" name="age" class="form-input" placeholder="Must be at least 18">
+                </div>
+
+                <div class="form-group">
+                    <label class="input-label" for="track">Workshop Track</label>
+                    <select id="track" name="track" class="form-input">
+                        <option value="">Select a track...</option>
+                        <option value="Frontend">Frontend</option>
+                        <option value="Backend">Backend</option>
+                        <option value="Mobile">Mobile</option>
+                        <option value="Data/AI">Data/AI</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group terms-group">
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">I accept the terms and conditions</label>
+                </div>
+
+                <button type="submit" id="submit-btn" class="btn">Sign Up</button>
+            </form>
+        </section>
+
+        <section class="list-section">
+            <h2>Enrolled Participants (<span id="participant-count">0</span>)</h2>
+            
+            <div class="form-group">
+                <input type="text" id="searchInput" class="form-input" placeholder="Search participants by name or email...">
+            </div>
+
+            <ul id="participant-list">
+                </ul>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
