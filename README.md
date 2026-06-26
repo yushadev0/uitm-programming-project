@@ -5,7 +5,7 @@ A modern, minimalist web application built with HTML, CSS, and JavaScript that a
 ## Features
 * **Advanced Form Validation:** Validates required fields, email format, and age restrictions (18+) using sleek **SweetAlert2** pop-up notifications instead of standard browser alerts.
 * **Dynamic Rendering:** Displays a real-time, responsive list of enrolled participants below the form.
-* **Participant Management:** Users can easily **Edit** or **Delete** participants directly from the list, with UI elements powered by **Font Awesome** icons.
+* **Participant Management (Task 4 - Option A):** Users can easily **Edit** or **Delete** participants directly from the list, with UI elements powered by **Font Awesome** icons. Deleting a participant safely removes them from the list and dynamically updates the total participant count.
 * **Search Functionality (Task 4 - Option C):** Includes a real-time search input to filter the participant list by full name or email address.
 * **Persistent Storage (Task 4 - Option D):** All participant data is securely saved to the browser's `localStorage`, ensuring data persists even after a page refresh.
 
